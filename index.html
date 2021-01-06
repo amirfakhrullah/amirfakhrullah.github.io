@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+    <title>Portfolio Amir</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/slidein.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+        crossorigin="anonymous">
+    </script>
+    <script src="resources/js/slideIn.js"></script>
+    
+</head>
+<body>
+    <!-- SCRIPT JS -->
+    <script src="resources/js/script.js"></script>
+
+    <!-- HEADER -->
+
+    <header>
+        <h2 class="title"><a href="#">portfolio <span class="amir">AMIR</span></a></h2>
+        <nav class="headernav">
+            <a href="#about">ABOUT</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#educations">EDUCATION</a>
+            <a href="contact">CONTACT</a>
+        </nav>
+        <div class="hidden" id="menu">
+            <img src="resources/images/burgermenu.png" alt="">
+        </div>
+    </header>
+
+    <!-- DROPDOWN MENU -->
+
+    <div class="dropdown" id="dropdown">
+        <div class=dropdown-links>
+            <a href="#about">ABOUT ME</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#educations">EDUCATION</a>
+            <a href="#contact">CONTACT ME</a>
+        </div>
+    </div>
+
+    <!-- js for dropdown button -->
+    <script>
+        let menu = document.getElementById('menu');
+
+        const myFunction = () => {
+            let dropdown = document.getElementById('dropdown');
+            if (dropdown.style.display == 'none') {
+                dropdown.style.display = 'flex';
+            } else if (dropdown.style.display = 'flex') {
+                dropdown.style.display = 'none';
+            }
+        }
+        menu.addEventListener('click', myFunction);
+    </script>
+
+    <!-- INTRODUCTION -->
+
+    <div class="introduction" id="introduction">
+        <div class="intro-img">
+            <img src="resources/images/background.jpg" alt="">
+        </div>
+        <div class="intro">
+            <h2 id="greeting">Hello!</h2>
+            <h1>I'm Amir Fakhrullah</h1>
+            <h1>Software Developer</h1>
+            <div class="see-projects">
+                <a href="#"><button>SEE PROJECTS</button></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

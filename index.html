@@ -25,10 +25,10 @@
     <header>
         <h2 class="title"><a href="#">portfolio <span class="amir">AMIR</span></a></h2>
         <nav class="headernav">
-            <a href="#about">ABOUT</a>
-            <a href="#projects">PROJECTS</a>
+            <a href="#abouts">ABOUT</a>
             <a href="#educations">EDUCATION</a>
-            <a href="contact">CONTACT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#contact">CONTACT</a>
         </nav>
         <div class="hidden" id="menu">
             <img src="resources/images/burgermenu.png" alt="">
@@ -39,16 +39,20 @@
 
     <div class="dropdown" id="dropdown">
         <div class=dropdown-links>
-            <a href="#about">ABOUT ME</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#educations">EDUCATION</a>
-            <a href="#contact">CONTACT ME</a>
+            <a href="#about" id="cont-dropdown1">ABOUT ME</a>
+            <a href="#projects" id="cont-dropdown2">PROJECTS</a>
+            <a href="#educations" id="cont-dropdown3">EDUCATION</a>
+            <a href="#contact" id="cont-dropdown4">CONTACT ME</a>
         </div>
     </div>
 
     <!-- js for dropdown button -->
     <script>
         let menu = document.getElementById('menu');
+        let aboutMe = document.getElementById('cont-dropdown1');
+        let projects = document.getElementById('cont-dropdown2');
+        let education = document.getElementById('cont-dropdown3');
+        let contactMe = document.getElementById('cont-dropdown4');
 
         const myFunction = () => {
             let dropdown = document.getElementById('dropdown');
@@ -59,6 +63,10 @@
             }
         }
         menu.addEventListener('click', myFunction);
+        aboutMe.addEventListener('click', myFunction);
+        projects.addEventListener('click', myFunction);
+        education.addEventListener('click', myFunction);
+        contactMe.addEventListener('click', myFunction);
     </script>
 
     <!-- INTRODUCTION -->
@@ -164,5 +172,144 @@
             </div>
         </div>
     </section>
+
+    <!-- EDUCATION -->
+
+    <section class="educations">
+        <h2 class="title-content js-slidein" id="educations">EDUCATION</h2>
+
+        <div class="education js-slidein" id="codecademy">
+            <div class="image">
+                <img src="resources/images/codecademy.png" alt="">
+            </div>
+            <div class="edu-info">
+                <h3>Codecademy</h3>
+                <span>2020</span>
+                <ul>
+                    <li>Full-Stack Software Engineer (6 months)</li>
+                    <li>Computer Science (3 months)</li>
+                    <li>Python 3</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="education js-slidein" id="upc">
+            <div class="image">
+                <img src="resources/images/upc.png" alt="">
+            </div>
+            <div class="edu-info">
+                <h3>Universitat Politecnica de Cataluña (UPC)</h3>
+                <span>Barcelona, Spain</span>
+                <span>2016 - 2020</span>
+                <p>Final Year Project: 9.5 / 10</p>
+                <p>Merit with Distinction (9 / 10) for several courses</p>
+                <p>8.9 / 10 in Informatics course (Computer Science basics, Python, Data Structures and Algorithms)</p>
+            </div>
+        </div>
+
+        <div class="education js-slidein" id="unikl">
+            <div class="image">
+                <img src="resources/images/unikl.png" alt="">
+            </div>
+            <div class="edu-info">
+                <h3>Universiti Kuala Lumpur Malaysian-Spanish Institute (UniKL MSI)</h3>
+                <span>Kedah, Malaysia</span>
+                <span>2014 - 2016</span>
+                <p>Straight A's in A-Level Edexcel (Engineering course)</p>
+            </div>
+        </div>
+
+        <div class="education js-slidein" id="integomb">
+            <div class="image">
+                <img src="resources/images/integomb.png" alt="">
+            </div>
+            <div class="edu-info">
+                <h3>Sekolah Berasrama Penuh Integrasi Gombak (SBPI Gombak)</h3>
+                <span>Selangor, Malaysia</span>
+                <span>2009 - 2013</span>
+                <p>Straight A's in Malaysia Certificate of Education (SPM)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+
+    <section class="skills">
+        <h2 class="title-content js-slidein" id="skills">Technical Skills</h2>
+
+        <div class="skills-row js-slidein">
+            <div class="image" ic="python">
+                <img src="resources/images/python.png" alt="">
+            </div>
+            <div class="image" id="html">
+                <img src="resources/images/html.png" alt="">
+            </div>
+            <div class="image" id="css">
+                <img src="resources/images/css.png" alt="">
+            </div>
+            <div class="image" id="js">
+                <img src="resources/images/javascript.png" alt="">
+            </div>
+            <div class="image" id="nodejs">
+                <img src="resources/images/nodejs.png" alt="">
+            </div>
+            <div class="image" id="react">
+                <img src="resources/images/react.jpg" alt="">
+            </div>
+            <div class="image" id="redux">
+                <img src="resources/images/redux.png" alt="">
+            </div>
+            <div class="image" id="sql">
+                <img src="resources/images/SQL.png" alt="">
+            </div>
+            <div class="image" id="git">
+                <img src="resources/images/git.png" alt="">
+            </div>
+            <div class="image" id="github">
+                <img src="resources/images/githubskills.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <!-- for navigation to about -->
+    <div id=abouts></div>
+
+    <section class="about js-slidein">
+        <div id="about">
+            <div class="image">
+                <img src="resources/images/amir.JPG" alt="">
+            </div>
+            <div class="about-info">
+                <h2>ABOUT ME</h2>
+                <p>My name is <strong>Amir Fakhrullah</strong>, I am a self-taught Software Developer and a Mechanical Engineering graduate from Universitat Politecnica de Cataluña in Barcelona, Spain. I have experience in using Python3 especially for API's and webscraping projects, and also for solving data structures and algorithms problems. Besides that, I have experience in doing web development projects using HTML, CSS, JavaScript, React and Redux.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+        <div class="contact">
+            <h2>CONTACT ME AT:</h2>
+            <h3 id="email">amirfakhrullah96@gmail.com</h3>
+            <div class="contact-img" id="github">
+                <a href="https://github.com/amirfakhrullah"><img src="resources/images/github.png" alt=""></a>
+            </div>
+            <div class="contact-img" id="linkedin">
+                <a href="https://www.linkedin.com/in/amir-fakhrullah-358000199/"><img src="resources/images/linkedin.png" alt=""></a>
+            </div>
+            <div class="contact-img" id="instagram">
+                <a href="https://www.instagram.com/amirfkrlh/"><img src="resources/images/Instagram-icon-WHITE.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>Amir's Personal Portfolio | <a href="#">Back to top</a></p>
+    </footer>
 </body>
 </html>

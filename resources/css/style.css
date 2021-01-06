@@ -123,7 +123,7 @@ header .title a{
     justify-content: flex-end;
     position: fixed;
     z-index: 5;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(212, 226, 8, 0.6);
 }
 
 .dropdown-links {
@@ -134,7 +134,7 @@ header .title a{
 }
 
 .dropdown-links a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 18px;
     letter-spacing: 3px;
@@ -142,7 +142,7 @@ header .title a{
 }
 
 .dropdown-links a:hover {
-    color:rgb(212, 226, 8);
+    color: rgb(164, 90, 82);
 }
 
 /* INTRODUCTION */
@@ -263,6 +263,7 @@ header .title a{
     flex-flow: column;
     padding: 20px;
     margin: 20px;
+    transition: transform 1s;
 }
 
 .project:hover {
@@ -308,30 +309,194 @@ header .title a{
     color: black;
 }
 
+/* EDUCATION */
 
+.educations {
+    max-width: 800px;
+    margin: 100px auto;
+}
 
+.educations h2 {
+    padding-bottom: 20px;
+}
 
+.education {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    margin: 20px;
+}
 
+.education .image {
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+}
 
+.education .image:hover {
+    transform: scale(1.2);
+}
 
+.education .image img {
+    width: 100%;
+    position: relative;
+    top: 30px;
+}
 
+.education .edu-info {
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(78, 111, 135);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
 
+.edu-info h3 {
+    color: rgb(212, 226, 8);
+}
 
+.edu-info span {
+    font-size: 0.8rem;
+    color: rgb(208, 202, 221);
+}
 
+/* SKILLS */
 
+.skills {
+    margin: 100px auto;
+    max-width: 1100px;
+}
 
+.skills h2 {
+    padding: 20px 50px;
+}
 
+.skills-row {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0;
+}
 
+.skills-row .image {
+    transition: transform 0.4s;
+    height: 100px;
+    width: auto;
+    margin: 20px;
+}
 
+.skills-row .image img {
+    height: 100%;
+}
 
+.skills-row .image:hover {
+    transform: scale(1.2);
+}
 
+/* ABOUT */
 
+#abouts {
+    margin-top: 80px;
+}
 
+.about {
+    margin: 200px auto;
+    max-width: 900px;
+}
 
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: center;
+}
 
+#about .image {
+    height: 450px;
+    width: auto;
+}
 
+#about .image img {
+    height: 100%;
+    flex-grow: 1;
+}
 
+.about-info {
+    width: 100%;
+    max-height: 450;
+    background-color: rgb(164, 90, 82);
+    color: white;
+    padding: 30px 50px;
+    line-height: 2;
+}
 
+.about-info h2 {
+    padding-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/* CONTACT */
+
+#contact {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+
+.contact {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.contact h2, .contact h3, .contact-img img {
+    display: flex;
+    align-items: center;
+}
+
+.contact h2 {
+    max-width: 200px;
+}
+
+.contact h3 {
+    max-width: 300px;
+}
+
+.contact-img {
+    height: 50px;
+    width: 50px;
+}
+
+.contact-img img {
+    transition: transform 1s;
+    width: 100%;
+    background: transparent;
+}
+
+.contact-img img:hover {
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+
+footer {          
+    padding: 20px 30px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer p,
+footer a {
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(208, 202, 221); 
+}
 
 
 
@@ -339,6 +504,7 @@ header .title a{
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1300px) {
+    /* re-adjusted image in introduction */
     .intro-img {
         max-width: 400px;
         height: 300px;
@@ -347,18 +513,15 @@ header .title a{
 }
 
 @media only screen and (max-width: 1080px) {
+    /* re-adjusted the font on introduction */
     .introduction .intro {
         max-width: 400px;
         font-size: medium;
         top: 30%;
     }
 
-    .headernav {
-        display: none;
-    }
-
     /* navigations changing to dropdown menu */
-    header .links {
+    .headernav {
         display: none;
     }
 
@@ -375,6 +538,7 @@ header .title a{
 }
 
 @media only screen and (max-width: 890px) {
+    /* image in introduction changing into background image */
     .introduction {
         height: 600px;
         width: auto;
@@ -384,6 +548,7 @@ header .title a{
         background-size: cover;
     
     }
+
     .introduction .intro {
         color: white;
         max-width: 700px;
@@ -394,5 +559,50 @@ header .title a{
 
     .intro-img {
         display: none;
+    }
+
+    /* image in about me hidden */
+    #about .image {
+        display: none;
+    }
+
+    /* contents in Contact re-adjusted */
+    .contact h2, .contact h3 {
+        font-size: 0.8em;
+    }
+    
+    .contact-img {
+        height: 35px;
+        width: 35px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    /* introduction position re-adjusted */
+    .introduction .intro {
+        margin-left: 20px;
+    }
+
+    /* contents in Contact re-adjusted */
+    .contact h2 {
+        display: none;
+    }
+
+    .contact-img {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    /* position of title in the header re-adjusted */
+    header .title {
+        margin-left: 0px;
+    }
+
+    /* projects title's position re-adjusted */
+    .projects h2 {
+        margin-left: 0px;
     }
 }

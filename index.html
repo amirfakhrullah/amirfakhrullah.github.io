@@ -25,9 +25,9 @@
         <h2 class="title"><a href="#">portfolio <span class="amir">AMIR</span></a></h2>
         <nav class="headernav">
             <a href="#abouts">ABOUT</a>
+            <a href="#projects">PROJECTS</a>
             <a href="#educations">EDUCATION</a>
             <a href="#skills">SKILLS</a>
-            <a href="#contact">CONTACT</a>
         </nav>
         <div class="hidden" id="menu">
             <img src="resources/images/burgermenu.png" alt="">
@@ -39,9 +39,9 @@
     <div class="dropdown" id="dropdown">
         <div class=dropdown-links>
             <a href="#abouts" id="cont-dropdown1">ABOUT ME</a>
-            <a href="#skills" id="cont-dropdown2">SKILLS</a>
+            <a href="#projects" id="cont-dropdown2">PROJECTS</a>
             <a href="#educations" id="cont-dropdown3">EDUCATION</a>
-            <a href="#contact" id="cont-dropdown4">CONTACT ME</a>
+            <a href="#skills" id="cont-dropdown4">SKILLS</a>
         </div>
     </div>
 
@@ -49,9 +49,9 @@
     <script>
         let menu = document.getElementById('menu');
         let aboutMe = document.getElementById('cont-dropdown1');
-        let skills = document.getElementById('cont-dropdown2');
+        let projects = document.getElementById('cont-dropdown2');
         let education = document.getElementById('cont-dropdown3');
-        let contactMe = document.getElementById('cont-dropdown4');
+        let skills = document.getElementById('cont-dropdown4');
 
         const myFunction = () => {
             let dropdown = document.getElementById('dropdown');
@@ -63,9 +63,9 @@
         }
         menu.addEventListener('click', myFunction);
         aboutMe.addEventListener('click', myFunction);
-        skills.addEventListener('click', myFunction);
+        projects.addEventListener('click', myFunction);
         education.addEventListener('click', myFunction);
-        contactMe.addEventListener('click', myFunction);
+        skills.addEventListener('click', myFunction);
     </script>
 
     <!-- INTRODUCTION -->
@@ -79,7 +79,7 @@
             <h1>I'm Amir Fakhrullah</h1>
             <h1>Software Developer</h1>
             <div class="see-projects">
-                <a href="#projects"><button>SEE PROJECTS</button></a>
+                <a href="#contact"><button>CONTACT ME</button></a>
             </div>
         </div>
     </div>
@@ -291,7 +291,8 @@
 
     <section id="contact">
         <div class="contact">
-            <h2>CONTACT ME AT:</h2>
+            <h2 class="title-content">CONTACT AMIR</h2>
+            <p>Drop me an email or contact me through the links below:</p>
             <h3 id="email">amirfakhrullah96@gmail.com</h3>
             <div class="contact-img" id="github">
                 <a href="https://github.com/amirfakhrullah"><img src="resources/images/github.png" alt=""></a>
@@ -308,7 +309,7 @@
     <!-- FOOTER -->
 
     <footer>
-        <p>Amir's Personal Portfolio | <a href="#">Back to top</a></p>
+        <p>Copyright © 2020 Amir Fakhrullah. All Rights Reserved | <a href="#">Back to top</a></p>
     </footer>
 </body>
 </html>

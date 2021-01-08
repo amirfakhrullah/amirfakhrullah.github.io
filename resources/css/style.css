@@ -441,34 +441,34 @@ header .title a{
 /* CONTACT */
 
 #contact {
-    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    max-width: 1000px;
+    height: 400px;
     background-color: black;
     color: white;
-    display: inline-block;
-}
-
-.contact {
-    margin: 50px;
     display: flex;
-    flex-wrap: wrap;
-    flex-flow: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.contact h2, .contact h3, .contact-img img {
+.contact h2, .contact h3, .contact p, .contact-img img {
+    margin: 20px 0;
     display: flex;
     align-items: center;
 }
 
 .contact h2 {
-    max-width: 200px;
+    padding-top: 20px;
 }
 
-.contact h3 {
-    max-width: 300px;
+.contact h3, .contact p {
+    display: flex;
+    justify-content: center;
 }
 
 .contact-img {
+    display: inline-block;
+    padding: 0 10px;
     height: 50px;
     width: 50px;
 }
@@ -566,17 +566,6 @@ footer a {
     #about .image {
         display: none;
     }
-
-    /* contents in Contact re-adjusted */
-    .contact h2, .contact h3 {
-        font-size: 0.8em;
-    }
-    
-    .contact-img {
-        height: 35px;
-        width: 35px;
-    }
-
 }
 
 @media only screen and (max-width: 500px) {
@@ -586,13 +575,10 @@ footer a {
     }
 
     /* contents in Contact re-adjusted */
-    .contact h2 {
-        display: none;
-    }
-
     .contact-img {
-        height: 20px;
-        width: 20px;
+        padding: 0 10px;
+        height: 35px;
+        width: 35px;
     }
 }
 

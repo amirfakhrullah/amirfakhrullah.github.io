@@ -177,7 +177,6 @@ header .title a{
 }
 
 .introduction .intro {
-    /* transition */
     animation: 1.5s ease-out 0s 1 slideInFromTop;
     font-size: 1.5em;
     letter-spacing: 2px;
@@ -263,11 +262,12 @@ header .title a{
     flex-flow: column;
     padding: 20px;
     margin: 20px;
-    transition: transform 1s;
+    transition: all 0.5s;
 }
 
 .project:hover {
-    transform: scale(1.05);
+    padding: 30px;
+    margin: 10px;
 }
 
 .project .image {
@@ -331,10 +331,6 @@ header .title a{
     width: 100px;
     height: 100px;
     margin-right: 50px;
-}
-
-.education .image:hover {
-    transform: scale(1.2);
 }
 
 .education .image img {
